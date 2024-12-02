@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    background: purple;
+    color: white;
+}
+
+nav {
+    background: rgb(235, 141, 235);
+    color: white;
+    height: 75px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+
+}
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.gamecontainer {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    padding-left: 1.9rem;
+    
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+}
+
+.box:hover{
+    background:rgb(248, 231, 248);
+}
+
+.imgbox img{
+    width:0;
+    transition: width 1s ease-in-out;
+}
+#reset{
+margin: 0 23px;
+padding: 5px;
+background-color: rgb(249, 207, 249);
+color: rgb(9, 0, 0);
+cursor: pointer;
+border-radius: 5px;
+border: 3px solid ;
+font-size: 0.9rem;
+font-style: italic;
+}
+.gameInfo{
+    padding: 0 34px;
+}
+.info{
+    font-size: 1.4rem;
+    font-family:monospace;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    font-size: 0.7rem;
+ background: rgb(241, 112, 241);
+ border-radius: 4px;
+ padding: 0.5rem;
+}
